@@ -20,4 +20,7 @@ module Activfun
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
   end
+
+  # Heroku requires this to be false
+config.assets.initialize_on_precompile=false
 end
