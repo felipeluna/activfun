@@ -1,8 +1,13 @@
 source 'https://rubygems.org'
-gem 'rails_12factor', group: :production # pra funcionar no heroku.
+#gem 'rails_12factor', group: :production # pra funcionar no heroku.
 gem 'protected_attributes' #pra poder add attr_accessible no model user.rb
 gem 'devise'
 gem 'thin'
+
+group :production do
+	gem 'rails_12factor'
+end
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
 # Use postgresql as the database for Active Record
