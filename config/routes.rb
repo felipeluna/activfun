@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-root to: 'welcome#index'
+root to: 'home#index'
+resources :dashboard
 
 devise_for :users, path_names: {sign_in: "login", sign_out: "logout"}
   # The priority is based upon order of creation: first created -> highest priority.

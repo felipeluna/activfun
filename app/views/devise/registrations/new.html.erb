@@ -16,9 +16,8 @@
     <%= f.password_field :password_confirmation, autocomplete: "off" %></div>
 
  <div><%= f.label :data %><br />
-  <%= f.date_select :data, start_year:1920 %></div> 
+  <%= f.date_select :data, start_year:1920, default: Date.today%></div> 
 
-<p>falta add data</p>
 <p>falta add escolhas.</p>
 
   <div><%= f.submit "Sign up" %></div>
