@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 #gem 'rails_12factor', group: :production # pra funcionar no heroku.
+
 gem 'protected_attributes' #pra poder add attr_accessible no model user.rb
 gem 'devise'
 gem 'thin'

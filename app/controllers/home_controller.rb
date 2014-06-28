@@ -5,4 +5,9 @@ class HomeController < ApplicationController
 			redirect_to :controller => 'dashboard', :action => 'index'
 		end
 	end
+
+	def teste
+	@user=current_user
+	
+	end
 end

@@ -17,8 +17,13 @@
 
  <div><%= f.label :data %><br />
   <%= f.date_select :data, start_year:1920, default: Date.today%></div> 
+  
 
-<p>falta add escolhas.</p>
+
+  <input id="item_selected_keywords" name="interesses[] "type="checkbox" value="futebol" />
+  <input id="item_selected_keywords" name="interesses[] "type="checkbox" value="voley" />
+  <input id="item_selected_keywords" name="interesses[] "type="checkbox" value="basquete" />
+
 
   <div><%= f.submit "Sign up" %></div>
 <% end %>
